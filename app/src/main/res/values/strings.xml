@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TopQuiz</string>
+    <string name="btn_history">Best Scores</string>
+    <string name="title_historic">Historique</string>
+</resources>
