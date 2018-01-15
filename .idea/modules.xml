@@ -3,9 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/TopQuiz-master.iml" filepath="$PROJECT_DIR$/.idea/TopQuiz-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TopQuiz-master.iml" filepath="$PROJECT_DIR$/TopQuiz-master.iml" />
+      <module fileurl="file://C:\Users\imp3d\StudioProjects\TopQuiz-master\.idea\TopQuiz-master.iml" filepath="C:\Users\imp3d\StudioProjects\TopQuiz-master\.idea\TopQuiz-master.iml" />
+      <module fileurl="file://C:\Users\imp3d\StudioProjects\TopQuiz-master\TopQuiz-master.iml" filepath="C:\Users\imp3d\StudioProjects\TopQuiz-master\TopQuiz-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\imp3d\StudioProjects\TopQuiz-master\app\app.iml" filepath="C:\Users\imp3d\StudioProjects\TopQuiz-master\app\app.iml" />
     </modules>
   </component>
 </project>

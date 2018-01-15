@@ -2,21 +2,19 @@ package com.ponroy.florian.topquiz.controller;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.ponroy.florian.topquiz.R;
+import com.ponroy.florian.topquiz.model.UserArrayAdaptor;
 import com.ponroy.florian.topquiz.model.User;
 
-import java.util.ArrayList;
-import java.util.PriorityQueue;
+import java.util.List;
 
 public class Historic extends AppCompatActivity {
 
-    private ArrayList<User> mBest;
-    private ArrayAdapter<User> adapter;
+    private List<User> mBest;
+    private UserArrayAdaptor adapter;
     private ListView list;
 
     @Override
@@ -24,9 +22,9 @@ public class Historic extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_historic);
 
-        mBest = getIntent().getParcelableArrayListExtra("HISTORIC");
+        mBest = getIntent().getParcelableExtra("HISTORIC");
 
-        adapter = new ArrayAdapter<User>(Historic.this, android.R.layout.simple_expandable_list_item_1, mBest);
+        adapter = new UserArrayAdaptor(this, mBest);
         list = (ListView) findViewById(R.id.liste);
         list.setAdapter(adapter);
     }

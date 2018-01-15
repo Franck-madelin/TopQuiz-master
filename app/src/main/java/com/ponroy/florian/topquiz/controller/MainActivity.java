@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText mNameInput;
     private Button mPlayButton, mHistoric;
     private User mUser;
-    //private List<User> mBest;
-    protected ArrayList<User> mBest;
+    private List<User> mBest;
+  //  protected ArrayList<User> mBest;
     public static final int GAME_ACTIVITY_REQUEST_CODE = 42;
     private SharedPreferences mPreferences;
 
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent i = new Intent(MainActivity.this, Historic.class);
-                i.putParcelableArrayListExtra("HISTORIC", mBest);
+                i.putExtra("HISTORIC", mBest);
                 startActivity(i);
             }
         });
